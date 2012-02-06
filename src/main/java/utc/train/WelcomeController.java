@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import utc.train.dao.DemoDao;
 import utc.train.pojo.Employee;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
@@ -18,7 +19,7 @@ import java.util.List;
 @Controller
 public class WelcomeController {
 
-    @Autowired
+    @Resource
     private DemoDao demoDao;
 
     @RequestMapping("/welcome.do")
